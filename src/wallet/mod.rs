@@ -1479,6 +1479,12 @@ where
         )
     }
 
+    /// Flush the database
+    pub fn flush(&self) -> Result<(), Error> {
+        self.database.borrow_mut().flush()?;
+        Ok(())
+    }
+
     /// Sync the internal database with the blockchain
     #[maybe_async]
     pub fn sync<P: 'static + Progress>(
