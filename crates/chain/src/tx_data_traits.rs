@@ -15,7 +15,7 @@ use alloc::vec::Vec;
 /// over other elements inside the [`Anchor`]s for comparison purposes, i.e., you should first
 /// compare the anchors' [`BlockId`]s and then care about the rest.
 ///
-/// The example shows different types of anchors:
+/// The following examples shows different types of anchors:
 /// ```
 /// # use bdk_chain::local_chain::LocalChain;
 /// # use bdk_chain::tx_graph::TxGraph;

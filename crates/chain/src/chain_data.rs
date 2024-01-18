@@ -4,7 +4,7 @@ use crate::{Anchor, AnchorFromBlockPosition, COINBASE_MATURITY};
 
 /// Represents the observed position of some chain data.
 ///
-/// The generic `A` should be a [`Anchor`] implementation.
+/// The generic `A` should be an [`Anchor`] implementation.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, core::hash::Hash)]
 pub enum ChainPosition<A> {
     /// The chain data is seen as confirmed, and in anchored by `A`.
