@@ -12,7 +12,8 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bdk_chain = { path = "../chain", version = "0.16.0" }
+# bdk_chain = { path = "../chain", version = "0.16.0" }
+bdk_chain = { version = "0.16.0" }
 # electrum-client = { version = "0.20" }
 electrum-client = { git = "https://github.com/thunderbiscuit/rust-electrum-client/", branch = "feature/ring-feature", default-features = false, features = ["use-rustls-ring"] }
 
