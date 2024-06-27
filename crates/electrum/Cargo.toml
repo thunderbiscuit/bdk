@@ -12,10 +12,11 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-# Keeping the path here breaks the build when using the fork as a dependency; remove once #135 is merged
-# and #1491 is ready to go in
-bdk_chain = { path = "../chain", version = "0.16.0" }
-# bdk_chain = { version = "0.16.0" }
+# Keeping the path here breaks the build when using the fork as a dependency #135 has the first line instead but for building
+# the bindings we need the second line
+# bdk_chain = { path = "../chain", version = "0.16.0" }
+bdk_chain = { version = "0.16.0" }
+
 # Switch the lines below once https://github.com/bitcoindevkit/rust-electrum-client/pull/135 is merged and a new version is released
 # electrum-client = { version = "0.21", default-features = false }
 electrum-client = { git = "https://github.com/thunderbiscuit/rust-electrum-client/", branch = "feature/rustls-ring", default-features = false }
